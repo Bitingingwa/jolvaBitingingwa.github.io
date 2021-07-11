@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=lato&display=swap');
+body{
+    font-family: 'lato', sans-serif;
+    background-color: gray;
+    margin: 0;
+    padding: o;
+    color: white;
+}
+body.page{
+    margin: 20px 80px;
+}
+/*----Barre de navigation----*/
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    padding: 10px 0px;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+}
+nav li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav li:hover::after{
+width: 100%;}
+/*----Fin la barre de navigation----*/
+
+/*----header----*/
+header{
+    margin-top: 100px;
+    text-align: center;
+    position: sticky;
+}
+header h1{
+    font-size:40px;
+    padding: 40px;
+}
+header p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+/*----fin header----*/
+
+/*----pied de la page----*/
+footer{
+    padding: 100px 100px;
+    background-color: #1a1a1a;
+    color: #828282;
+}
+footer .colonnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*----fin pied de la page----*/
+@media screen and (max-width: 640px){
+    body .page{
+        margin: 5px;
+    }
+      
+    header{
+        margin-top: 10px;
+    }
+    header h1{
+        font-size: 30px;
+        margin: 60px;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+    }
+    header p{
+        font-size: 20px;
+        text-align: center;
+        
+    }
+}
+/*----Biographie----*/
+.biographie{
+    position: sticky;
+    margin-top: 200px;
+    text-align: center;
+    background-color: yellow;
+}
+.biographie h1{
+    font-size: 30px;
+    text-align: center;
+    color: blue;
+}
+.biographie p{
+    color:blue;
+    font-style: italic; 
+    font-size: 20px;
+}
+@media screen and (max-width: 640px){
+    .biographie{
+        margin-top: 100px;
+    }
+    .biographie h1{
+        font-size: 20px;
+    }
+    .biographie p{
+        font-size: 15px;
+    }
+}
+
+/*----Fin Biographie----*/
+
+/*----Evolution----*/
+.Evolution{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 100px;
+ 
+}
+.Evolution h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.Evolution p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 5px;
+   
+}
+@media screen and (max-width: 640px){
+    .Evolution{
+        padding-top: 60px;
+    }
+    .Evolution h1{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .Evolution p{
+        font-size: 15px;
+        font-weight: 200;
+        line-height: 20px;
+        padding: 2px;
+    }
+}
+/*----Fin Evolution----*/
+/*-------VISION-------*/
+.Vision{
+    background-color: rgb(56, 110, 103);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 100px;
+}
+.Vision h1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+.Vision p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 20px;
+    padding: 2px;
+}
+.backg{
+    flex-basis: 20%;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+}
+.backg img{
+    height: 100px;
+    margin-left:30px;
+    margin-right: 30px;
+    border-radius: 25%;
+}
+.backg h3{
+    color: black;
+}
+.backg p{
+    color: black;
+}
+footer{
+    padding: 100px 100px;
+    background-color: #1a1a1a;
+    color: #828282;
+}
+footer .colonnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 640px){
+     .Vision{
+        padding-top: 60px;
+    }
+     .Vision .h1{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .Vision .p{
+        font-size: 15px;
+        font-weight: 150;
+        line-height: 20px;
+        padding: 5px;
+        text-align: center;
+    }
+    .backg{
+        flex-basis: 0%;
+        border-radius: 0px;
+        margin-bottom: 0%;
+        text-align: left;
+        background: #fff3f3;
+        padding: 0px;
+        display: flex;
+
+    }
+    .backg img{
+        height: 40px;
+        margin-left:20px;
+        margin-right: 20px;
+        border-radius: 30%;
+    }
+    footer{
+        padding: 50px 50px;
+        background-color: #1a1a1a;
+        color: #828282;
+    }
+    footer .colonnes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
